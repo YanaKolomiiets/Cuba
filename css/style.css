@@ -222,13 +222,42 @@ line-height: 17px;
 .about__item:nth-child(even) .about__box::before{
     right: 19px;
     left: auto;
-    background-image: none;
     border-right: 2px solid #ECB84C;
     border-top: 2px solid #ECB84C;
+    border-left: none;
 }
 
 .about__item:nth-child(even) .about__box::after{
     left: 19px;
     border-right: none;
     border-left: 2px solid #ECB84C;
+}
+
+.photo{
+    padding: 80px 0;
+}
+
+.photo__title{
+    margin-bottom: 42px;
+}
+
+.photo__text{
+    padding-bottom: 48px;
+    margin-bottom: 56px;
+    position: relative;
+}
+
+.photo__text::after{
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    background-color: rgba(208, 212, 216, .5);
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.photo__slider{
+    min-width: 640px;
+    margin: 0 auto;
 }
