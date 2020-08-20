@@ -261,3 +261,11 @@ line-height: 17px;
     min-width: 640px;
     margin: 0 auto;
 }
+
+.slick-arrow{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ECB84C;
+  }
