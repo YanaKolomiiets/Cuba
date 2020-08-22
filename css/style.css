@@ -13,11 +13,11 @@ ul{
     list-style: none;
 }
 
-.body{
+body{
     color: #505050;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 40px;
     font-weight: 400;
 }
 
@@ -42,7 +42,7 @@ margin: 0 auto;
     line-height: 38px;
     text-align: center;
     color: #4E5665;
-    margin-bottom: 22 px;
+    font-weight: 400;
 }
 .header__top{
     background-image: url('../images/top-bg.jpg');
@@ -150,7 +150,7 @@ margin-bottom: -12px;
     margin-top: 32px;
     font-weight: bold;
     font-size: 22px;
-    line-height: 30px;
+    line-height:28px;
 }
 
 .reason__statistics-text{
@@ -237,6 +237,92 @@ line-height: 17px;
     border-left: 2px solid #ECB84C;
 }
 
+.about__preview-title{
+margin-bottom: 38px;
+}
+
+.about__preview-text{
+    margin: 53px 0 80px;
+
+}
+
+.about__images-box{
+    padding-top: 73px;
+    position: relative;
+}
+
+.about__dot{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(238, 184, 76, .75);
+    position: absolute;
+    cursor: pointer;
+}
+
+.about__dot--1{
+    top: 190px;
+    right: 148px;
+}
+
+.about__dot--2{
+    top: 188px;
+    right: 495px;
+}
+
+.about__dot--3{
+    top: 147px;
+    right: 374px;
+}
+
+.about__dot--4{
+    top: 28px;
+    right: 299px;
+}
+
+.about__dot::after{
+    content: " ";
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFD600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__dot::before{
+    content:"";
+    position: absolute;
+    top: -113px;
+    left: 25px;
+    width: 244px;
+    height: 122px;
+    background-image: url('../images/line.svg');
+    display: none;
+}
+
+.about__dot-text{
+    position: absolute;
+    top: -140px;
+    left: 150px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #505050;
+    display: none;
+    }
+
+.about__dot:hover::before{
+    display: block;
+}
+
+.about__dot:hover .about__dot-text{
+    display: block;
+}
+
 .photo{
     padding: 80px 0;
 }
@@ -264,6 +350,7 @@ line-height: 17px;
 .photo__slider{
     min-width: 640px;
     margin: 0 auto;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
 }
 
 .slick-arrow{
@@ -290,13 +377,14 @@ line-height: 17px;
 .footer{
     background: #F8F8F8;
     padding: 55px 0 32px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     color: #505050;
 }  
 
 .footer__items{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .footer__item{
@@ -315,13 +403,13 @@ line-height: 17px;
 .footer__item-title{
     font-weight: bold;
     font-size: 15px;
-    line-height: 20px;
+    line-height:19px;
     color: #4E5665;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-.footer__item-link{
+.footer__item-li-link{
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 8px;
